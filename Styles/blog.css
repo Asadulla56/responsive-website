@@ -1,24 +1,26 @@
 /* sheard section */
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-
-* {
-    font-family: 'Work Sans', sans-serif;
-}
-
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
+body h2,p{
+    font-family: 'Mulish', sans-serif;
+}
+body h1{
+    font-family: 'Mulish', sans-serif;
+}
 
 header,
 main {
-    margin: 0 140px;
+    margin: 0 135px;
     background: #FFF;
 }
 
-.button {
+.button-content {
     text-align: center;
     margin-top: 40px;
 }
@@ -29,11 +31,6 @@ main {
     background-color: #FFF;
     border-radius: 8px;
     text-align: left;
-}
-
-.primary {
-    color: #FF5400;
-    font-size: 700;
 
 }
 
@@ -43,9 +40,8 @@ main {
     font-size: 16px;
     font-weight: 400;
     padding: 10px;
+
 }
-
-
 
 #last-btn {
     background: #FF5400;
@@ -68,14 +64,10 @@ nav h2 img {
     width: 30px;
     height: 30px;
     text-align: center;
+    line-height: normal;
     display: inline;
 
 
-}
-
-.commit {
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 nav ul {
@@ -89,8 +81,8 @@ li a {
     text-decoration: none;
 }
 
-.poster {
-    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+.banner {
+    background-image: url(Images/banner.png);
     background-repeat: no-repeat;
     border-radius: 8px;
     height: 500px;
@@ -98,7 +90,7 @@ li a {
     padding-top: 100px;
 }
 
-.poster h1 {
+.banner h1 {
     color: #FFF;
     padding: 0px;
     margin: 10px;
@@ -107,7 +99,7 @@ li a {
 
 }
 
-.poster p {
+.banner p {
     color: #FFF;
     padding: 0px;
     margin: 10px;
@@ -130,7 +122,7 @@ li a {
     text-align: center;
 }
 
-.banner-section {
+.popular-section {
     display: flex;
     justify-content: space-between;
     padding: 40px 40px;
@@ -138,165 +130,180 @@ li a {
 
 }
 
-.banner-content {
+.popular-content {
     border: 1px solid none;
     background: #FFF;
 }
 
-.banner-content h2 {
+.popular-content h2 {
     color: #131318;
     text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.banner-content p,
-ul {
-    color: rgba(19, 19, 24, 0.70);
-    width: 577px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.banner-content p {
-    margin: 24px 0;
-}
-
-.title-img {
-    width: 540px;
-    height: 550px;
-}
-
-#baton {
-    border-radius: 0.5rem;
-    background: #FF5400;
-}
-
-/* choose your distination */
-.title-section {
-    text-align: center;
-    gap: 25px;
-}
-
-.title-section h2 {
-    color: #131318;
-    text-align: center;
+    font-family: Mulish;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-.title-section p {
-    color: #5A5A5D;
-    text-align: center;
+.popular-content p,
+ul {
+    color: rgba(19, 19, 24, 0.70);
+    width: 577px;
+    font-family: Mulish;
     font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 26px;
+
 }
 
-.title-description {
+.popular-content p {
+    margin: 24px 0;
+}
+
+.popular-img {
+    width: 540px;
+    height: 550px;
+}
+
+/* choose your distination */
+.distination-title {
+    text-align: center;
+    gap: 25px;
+
+}
+
+.distination-title h2 {
+    color: #131318;
+    text-align: center;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.distination-title p {
+    color: #5A5A5D;
+    text-align: center;
+        
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.images-flex-main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 20px;
     gap: 20px;
+
     justify-content: space-between;
 }
 
-.title--sce-description h2 {
+.single-flex h2 {
     margin-top: 150px;
     color: #FFF;
     text-align: center;
+    font-family: Mulish;
     font-size: 28px;
+    font-style: normal;
     font-weight: 800;
+    line-height: normal;
 }
 
-.title-description .title--sce-description {
+.images-flex-main .single-flex {
+
     min-height: 100px;
     width: 573px;
 }
 
-.title-description .title--sce-description:nth-child(1) {
-    background-image: url(../Images/Rectangle\ 5.png);
+.images-flex-main .single-flex:nth-child(1) {
+    background-image: url(Images/maldiv.png);
     height: 300px;
     width: 100%;
+
+
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(2) {
-    background-image: url(../Images/Rectangle\ 8.png);
+.images-flex-main .single-flex:nth-child(2) {
+    flex-basis: calc(50% - 10px);
+    background-image: url(Images/induneshia.png);
     height: 300px;
-    width: 100%;
+
     text-align: center;
+
     background-size: cover;
     background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(3) {
-    background-image: url(../Images/Rectangle\ 6.png);
+.images-flex-main .single-flex:nth-child(3) {
+    flex-basis: calc(33.333% - 10px);
+    background-image: url(Images/srilanka.png);
     height: 300px;
-    width: 100%;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(4) {
-    background-image: url(../Images/Rectangle\ 7.png);
+.images-flex-main .single-flex:nth-child(4) {
+    flex-basis: calc(40.65% - 10px);
+    background-image: url(Images/amirica.png);
     height: 300px;
-    width: 100%;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(5) {
-    background-image: url(../Images/Rectangle\ 9.png);
+.images-flex-main .single-flex:nth-child(5) {
+    flex-basis: calc(25% - 10px);
+    background-image: url(Images/kashmir.png);
     height: 300px;
-    width: 100%;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(6) {
-    background-image: url(../Images/Rectangle\ 11.png);
+.images-flex-main .single-flex:nth-child(6) {
+    flex-basis: calc(50% - 10px);
+    background-image: url(Images/bangladesh.png);
     height: 300px;
-    width: 100%;
     text-align: center;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
 }
 
-.title-description .title--sce-description:nth-child(7) {
-    background-image: url(../Images/Rectangle\ 10.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.images-flex-main .single-flex:nth-child(7) {
     flex-basis: calc(50% - 10px);
+    background-image: url(Images/bandorban.png);
+    height: 300px;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
 }
 
 /* my choose section */
-.container {
+.choose-section {
     text-align: center;
     padding: 40px 40px;
 }
 
 .choose-content {
     display: flex;
+
     justify-content: space-around;
     margin-top: 48px;
     gap: 24px;
+
+
 }
 
 .choose-conteinar {
@@ -315,7 +322,7 @@ ul {
     background: rgba(41, 206, 246, 0.05);
 }
 
-.content {
+.rakib {
     padding: 32px;
     text-align: left;
     border-radius: 16px;
@@ -331,23 +338,27 @@ ul {
     font-size: 70px;
 }
 
-
-.Deals {
+/* Deals & Discounts */
+.Deals-Discounts {
     text-align: center;
 
 }
 
-.Deals-Discounts {
-    background-image: url(../Images/Group\ 39.png);
+.Deals-Discounts-content {
+    background-image: url(Images/Group\ 39.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 500px;
     border: 2px solid #FFF;
     position: relative;
+
+
+
 }
 
-.deals-content {
+.dealc-content {
+
     width: 476px;
     border-radius: 16px;
     margin-top: 0;
@@ -363,7 +374,8 @@ ul {
 }
 
 .Deals-Discounts-content2 {
-    background-image: url(../Images/Group\ 40.png);
+
+    background-image: url(Images/Group\ 40.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -371,9 +383,12 @@ ul {
     border: 2px solid #FFF;
     position: relative;
 
+
+
 }
 
-.deals-content2 {
+.dealc-content2 {
+
     width: 476px;
     border-radius: 16px;
     margin-top: 0;
@@ -388,19 +403,25 @@ ul {
     padding: 50px;
 }
 
-.deals-content h4 {
+.dealc-content h4 {
     color: #FF5400;
+
     font-size: 20px;
+    font-style: normal;
     font-weight: 800;
+    line-height: normal;
 }
 
-.deals-content2 h4 {
+.dealc-content2 h4 {
     color: #FF5400;
+
     font-size: 20px;
+    font-style: normal;
     font-weight: 800;
+    line-height: normal;
 }
 
-.btn-primary {
+.Discounts-btn {
     background: #FF5400;
     color: #FFF;
     border-radius: 5px;
@@ -409,23 +430,24 @@ ul {
     height: 30px;
     padding: 10px;
     text-align: center;
+
 }
 
-
-
 /* A Simple Perfect Place */
-.Simple-perfact {
+.Simple-section {
     display: flex;
     justify-content: space-around;
     margin: 40px 40px;
     gap: 42px;
+
 }
 
-.simple-container {
+.simple-content {
     background: #FFF;
+
 }
 
-.simple-container h2 {
+.simple-content h2 {
     color: #131318;
     font-size: 40px;
     font-style: normal;
@@ -442,7 +464,7 @@ ul {
 
 }
 
-.simple-container ul {
+.simple-content ul {
     color: #131318;
     font-size: 16px;
     font-style: normal;
@@ -461,8 +483,8 @@ ul {
     text-align: center;
 }
 
-.simple-content-place {
-    background-image: url(../Images/Group\ 40089.png);
+.simple-content2 {
+    background-image: url(Images/Group\ 40089.png);
     background-repeat: no-repeat;
     border-radius: 16px;
     width: 610px;
@@ -471,11 +493,13 @@ ul {
     align-items: center;
 }
 
-.simple-content-place h2 {
+.simple-content2 h2 {
     padding-top: 150px;
     color: #FFF;
     text-align: center;
     font-size: 24px;
+    font-style: normal;
+
     line-height: 36px;
 }
 
@@ -487,33 +511,39 @@ ul {
     justify-content: space-between;
 }
 
-.Newsletter-container {
+.Newsletter-content {
     background: #FFF;
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 40px 40px;
     width: 474px;
+
+
 }
 
-.Newsletter-container h3 {
+.Newsletter-content h3 {
     color: #131318;
     font-size: 24px;
+    font-style: normal;
     padding-top: 0px;
+    line-height: normal;
 }
 
-.Newsletter-container,
+.Newsletter-content,
 p {
     color: #5A5A5D;
     font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+
 }
 
-.text {
+
+.input {
+    gap: 24px;
     width: 393px;
     height: 52px;
     margin-bottom: 20px;
-    margin-top: 20px;
-    gap: 50px;
 }
 
 .Subscribe-btn {
@@ -525,6 +555,7 @@ p {
     width: 400px;
     padding: 10px;
     text-align: center;
+
 }
 
 /* footer-section */
@@ -534,7 +565,7 @@ footer {
     background: rgba(19, 19, 24, 0.05)
 }
 
-.footer-container {
+.footer-content {
     text-align: center;
     padding-top: 200px;
 
@@ -551,42 +582,37 @@ hr {
     margin: 20px 200px;
 }
 
-.finish {
+.last {
     text-align: center;
     margin-top: 50px;
     color: #131318;
+    font-family: Inter;
     font-size: 16px;
+    font-style: normal;
     font-weight: 300;
+    line-height: normal;
 }
 
-.latter {
+.hide {
     display: none;
 }
 
-
-
-
-/* responsive mobile devices */
-
 /* media quary section */
 @media screen and (max-width:600px) {
-    main.button {
+    main.button{
         text-align: center;
         margin-top: 20px;
     }
-
     header {
         padding: 0px 0px;
         margin: 0 20px;
     }
-
-    body p {
+    body p{
         font-size: 14px;
 
 
     }
-
-    body h2 {
+    body h2{
         font-size: 20px;
     }
 
@@ -620,13 +646,11 @@ hr {
         gap: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .poster h1 {
+    .banner h1{
         font-size: 22px;
-
+       
     }
-
-    .poster p {
+    .banner p{
         font-size: 14px;
     }
 
@@ -634,7 +658,7 @@ hr {
     .popular-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
+       
 
 
         gap: 25px;
@@ -655,12 +679,11 @@ hr {
     }
 
     .popular-content p {
-
+      
         font-size: 14px;
         margin: 24px 0;
     }
-
-    .popular-content li {
+    .popular-content li{
         font-size: 14px;
         color: #5A5A5D;
     }
@@ -689,13 +712,11 @@ hr {
 
 
     }
-
-    .distination-title h2 {
+    .distination-title h2{
         font-size: 20px;
 
     }
-
-    .distination-title p {
+    .distination-title p{
         font-size: 14px;
     }
 
@@ -780,32 +801,126 @@ hr {
         grid-template-columns: repeat(1, 1fr);
 
         margin: 0px;
-
+        
         text-align: start;
     }
 
 
 
-    .simple-content2 {
-        padding: 10px;
-        margin-left: 10px;
-    }
+.simple-content2 {
+    padding: 10px;
+    margin-left: 10px;
+}
 
-    /* Newsletter section */
-    .Newsletter-section {
+/* Newsletter section */
+.Newsletter-section {
 
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 50px 10px;
-        padding: 10px;
-    }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 10px;
+    padding: 10px;
+}footer{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+    
+  
+}
 
-    footer {
-        text-align: center;
-        margin: 10px;
-        padding: 10px;
-
-    }
 
 
+
+
+
+
+/* work sens */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap');
+
+/* shared styles  */
+* {
+    font-family: 'Work Sans', sans-serif;
+    ;
+}
+
+.btn-primary {
+    color: #FF5400;
+    font-size: 700;
+
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #131313;
+    padding-left: 10px;
+}
+
+/* header styles */
+header {
+    /* background: rgba(255, 144, 14, 0.10); */
+    padding: 50px 240px;
+    display: flex;
+
+}
+
+.title {
+    display: flex;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* main section */
+main {
+    padding: 50px 240px;
+}
+
+.banner {
+    background: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    width: auto;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+
+}
+
+.banner-content {
+    text-align: center;
+
+}
+
+.banner-title {
+    padding-bottom: 80px;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+}
+
+.poster-content {
+    /* padding-left: 70px; */
+    padding-right: 70px
+}
+.teams-container, .choose {
+    text-align: center;
 }
