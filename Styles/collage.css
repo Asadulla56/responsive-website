@@ -1,0 +1,89 @@
+/* work sens */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap');
+
+/* shared styles  */
+* {
+    font-family: 'Work Sans', sans-serif;
+    ;
+}
+
+.btn-primary {
+    color: #FF5400;
+    font-size: 700;
+
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #131313;
+    padding-left: 10px;
+}
+
+/* header styles */
+header {
+    /* background: rgba(255, 144, 14, 0.10); */
+    padding: 50px 240px;
+    display: flex;
+
+}
+
+.title {
+    display: flex;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* main section */
+main {
+    padding: 50px 240px;
+}
+
+.banner {
+    background: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    width: auto;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+
+}
+
+.banner-content {
+    text-align: center;
+
+}
+
+.banner-title {
+    padding-bottom: 80px;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+}
+
+.poster-content {
+    /* padding-left: 70px; */
+    padding-right: 70px
+}
+.teams-container, .choose {
+    text-align: center;
+}
