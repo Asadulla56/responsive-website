@@ -8,7 +8,7 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     scroll-behavior: smooth;
 }
 
@@ -193,97 +193,18 @@ ul {
     font-size: 16px;
     font-weight: 400;
 }
-
-.title-description {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 20px;
-    gap: 20px;
-    justify-content: space-between;
+.image{
+    background-position: center;
 }
-
-.title--sce-description h2 {
-    margin-top: 150px;
-    color: #FFF;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 800;
+.image .adil{
+    margin-top: 10px;
+    flex: calc(50%-10px);
 }
-
-.title-description .title--sce-description {
-    min-height: 100px;
-    width: 573px;
+.image .asad{
+    margin-top: 10px;
 }
-
-.title-description .title--sce-description:nth-child(1) {
-    background-image: url(../Images/Rectangle\ 5.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(2) {
-    background-image: url(../Images/Rectangle\ 8.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(3) {
-    background-image: url(../Images/Rectangle\ 6.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(4) {
-    background-image: url(../Images/Rectangle\ 7.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(5) {
-    background-image: url(../Images/Rectangle\ 9.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(6) {
-    background-image: url(../Images/Rectangle\ 11.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
-}
-
-.title-description .title--sce-description:nth-child(7) {
-    background-image: url(../Images/Rectangle\ 10.png);
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-basis: calc(50% - 10px);
+.image .farabi{
+    margin-top: 10px;
 }
 
 /* my choose section */
@@ -526,6 +447,9 @@ p {
     padding: 10px;
     text-align: center;
 }
+.kitty{
+    padding left: 20px;
+}
 
 /* footer-section */
 footer {
@@ -614,7 +538,7 @@ hr {
 
     }
 
-    .button-content {
+    .button {
         margin: 20px 40px;
         display: grid;
         gap: 10px;
@@ -631,45 +555,40 @@ hr {
     }
 
     /* .popular-section */
-    .popular-section {
+    .banner-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
-
-
         gap: 25px;
 
     }
 
-    .popular-content {
+    .banner-content {
         border: 1px solid none;
         background: #FFF;
 
     }
 
-    .popular-content h2 {
-
+    .banner-content h2 {
         text-align: center;
         font-size: 20px;
 
     }
 
-    .popular-content p {
-
+    .banner-content p {
         font-size: 14px;
         margin: 24px 0;
     }
 
-    .popular-content li {
+    .banner-content li {
         font-size: 14px;
         color: #5A5A5D;
     }
 
-    .popular-content button {
+    .banner-content #baton {
         text-align: center;
     }
 
-    .popular-img {
+    .title-img {
         padding: 0;
         margin: 0;
         width: 100%;
@@ -679,7 +598,7 @@ hr {
 
     /* choose your distination */
 
-    .images-flex-main {
+    .ti {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 20px;
@@ -687,15 +606,14 @@ hr {
         align-items: center;
         gap: 20px;
 
-
     }
 
-    .distination-title h2 {
+    .title-section h2 {
         font-size: 20px;
 
     }
 
-    .distination-title p {
+    .title-section p {
         font-size: 14px;
     }
 
@@ -704,7 +622,6 @@ hr {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 50px 10px;
-
         gap: 24px;
 
 
@@ -712,7 +629,6 @@ hr {
 
     .choose-section {
         text-align: center;
-
         padding: 0px 0px;
     }
 
@@ -729,7 +645,7 @@ hr {
         background: rgba(41, 206, 246, 0.05);
     }
 
-    .rakib {
+    .content {
 
         margin: 0 10px;
         padding: 20px;
@@ -737,7 +653,7 @@ hr {
     }
 
     /* Deals & Discounts  */
-    .Deals-Discounts {
+    .Deals {
         text-align: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -745,8 +661,7 @@ hr {
         padding: 10px;
     }
 
-    .Deals-Discounts-content {
-
+    .Deals-Discounts {
         width: 100%;
         height: 500px;
 
@@ -759,41 +674,38 @@ hr {
 
     }
 
-    .dealc-content {
+    .deals-content {
         width: 303px;
         height: 297px;
     }
 
-    .dealc-content2 {
+    .deals-content2 {
         width: 303px;
         height: 297px;
     }
 
     /* A Simple Perfect Place */
-    .jahid {
+    .perfact {
         margin: 50px 10px;
 
     }
 
-    .Simple-section {
+    .Simple-perfact {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
         margin: 0px;
-
         text-align: start;
     }
 
 
 
-    .simple-content2 {
+    .simple-content-place {
         padding: 10px;
         margin-left: 10px;
     }
 
     /* Newsletter section */
     .Newsletter-section {
-
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 50px 10px;
